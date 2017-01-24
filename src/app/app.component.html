@@ -1,3 +1,29 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <a class="navbar-brand" href="">Angular Router Demo</a>
+      <ul class="nav navbar-nav" routeLinkActive="active">
+        <li class="nav-item"><a class="nav-lnk" routerLink="home" href="/home">Home</a></li>
+        <li class="nav-item"><a class="nav-lnk" routerLink="hero" href="/hero">Tour of Heroes</a></li>
+        <li class="nav-item"><a class="nav-lnk" routerLink="pet" href="/pet">Pet Store</a></li>
+        <li class="nav-item"><a class="nav-lnk" routerLink="about" href="/about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <h2>
+      {{title}}
+    </h2>
+    <h2>
+      {{hero.name}} details!
+    </h2>
+  </div>
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+
+
+
